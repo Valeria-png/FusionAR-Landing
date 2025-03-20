@@ -2,13 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon"  href="/Logo AR.png" />
+    <link rel="icon"  href="/fusionarlogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>FusionAR</title>
   </head>
-  <body>
+  <body class="relative">
     <div id="app"></div>
+    <header class="fixed top-0 flex bg-[#F2F7FF]/75 h-32 z-50 items-center w-screen px-10">
+      <img src="/fusionarlogo.png" alt="" class="w-20 absolute top-4 left-1/2 transform -translate-x-1/2">
+      <a href="./contactanos.html" style="font-family: 'Space Grotesk', sans-serif;" class=" ml-auto self-center font-bold text-xl text-[#7953FF]">Contáctanos</a>
+    </header>
+    <section class="pt-36 bg-[#F2F7FF] flex flex-col gap-6 items-center justify-center ">
+      <h1 class="text-center text-[#180580] text-4xl" style="font-family: 'Space Grotesk', sans-serif;">Impacta a tus clientes con una experiencia en <br> 
+        <span class="text-shadows text-[#7953FF] font-bold">Tres Dimensiones</span>
+      </h1>
 
+      <p class="font-['Roboto'] text-xl">
+        Integramos realidad aumentada (AR) y 3D en catálogos digitales y físicos brindando una experiencia de compra más intuitiva, atractiva e informativa para tu cliente.
+      </p>
+      <button style="font-family: 'Space Grotesk', sans-serif;"  class="callToActionBtn cursor-pointer  text-[#F2F7FF] p-4 rounded-3xl hover:scale-105 transition duration-300 ">
+        Conoce nuestros servicios
+      </button>
+      <div>
+        <img src="/mockup3.png" alt="" class="w-2/3">
+      </div>
+    </section>
+    <section class="bg-[#F2F7FF] flex flex-col gap-8 items-center justify-center px-10">
+      <h2 style="font-family: 'Space Grotesk', sans-serif;" class="text-[#7953ff] font-bold text-4xl">¿Por qué integrar 3D y realidad aumentada en mi negocio?</h2>
+      <div class="flex w-full justify-center gap-4 text-2xl font-['Roboto'] text-[#180580]">
+        <div class="w-1/3 flex flex-col items-center">
+          <img src="/3d symbol.gif" alt="" class="w-2/3">
+          <p class="text-wrap">El 3d y el AR permite al cliente visualizar mejor que cualquier foto</p>
+        </div>
+        <div class="w-1/3 flex flex-col items-center">
+          <img src="/decision gif.gif" alt="" class="w-2/3">
+          <p class="text-wrap">Da seguridad de decisión al cliente</p>
+        </div>
+        <div class="w-1/3 flex flex-col items-center">
+          <img src="/memorable.png" alt="" class="w-1/3">
+          <p class="text-wrap">Da una experiencia memorable al cliente</p>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
+  <style>
+        .text-shadows {
+      text-shadow: 3px 3px 0 #8E8FFB,
+                  6px 6px 0 #7953FF,
+                  9px 9px #180580,
+                  12px 12px 0 var#070127;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: calc(2rem + 5vw);
+      text-align: center;
+      margin: 0;
+      color: var(#C0D8FF);
+      animation: shadows 1.5s ease-in infinite;
+      letter-spacing: 0.2rem;
+    }
+    @keyframes shadows {
+      0% { text-shadow: none; }
+      10% { transform: translate(-3px, -3px); text-shadow: 3px 3px 0 #8E8FFB; }
+      20% { transform: translate(-6px, -6px); text-shadow: 3px 3px 0 #8E8FFB, 6px 6px 0 #7953FF; }
+      30% { transform: translate(-9px, -9px); text-shadow: 3px 3px 0 #8E8FFB, 6px 6px 0 #7953FF, 9px 9px #180580; }
+      40%, 50% { transform: translate(-12px, -12px); text-shadow: 3px 3px 0 #8E8FFB, 6px 6px 0 #7953FF, 9px 9px #180580, 12px 12px 0 #070127; }
+      60%, 70% { text-shadow: 3px 3px 0 #8E8FFB, 6px 6px 0 #7953FF, 9px 9px #180580; }
+      80% { text-shadow: 3px 3px 0 #8E8FFB, 6px 6px 0 #7953FF; }
+      90% { text-shadow: 3px 3px 0 #8E8FFB; }
+      100% { text-shadow: none; }
+    }
+    .callToActionBtn{
+      border: 4px solid #0000;
+
+      background: linear-gradient(#070127, #070127) padding-box, linear-gradient(
+        var(--angle),
+        #C0D8FF,
+        #7953FF
+      ) border-box;
+      animation: 8s rotate linear infinite;
+    }
+    @keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+  </style>
 </html>
