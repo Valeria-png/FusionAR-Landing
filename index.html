@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon"  href="/fusionarlogo.png" />
+    <link rel="icon"  href="/fusionarlogo.png"  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,31 +20,129 @@
         <span class="text-shadows text-[#7953FF] font-bold">Tres Dimensiones</span>
       </h1>
 
-      <p class="font-['Roboto'] text-xl">
+      <p class="font-['Roboto'] text-xl text-center">
         Integramos realidad aumentada (AR) y 3D en catálogos digitales y físicos brindando una experiencia de compra más intuitiva, atractiva e informativa para tu cliente.
       </p>
-      <button style="font-family: 'Space Grotesk', sans-serif;"  class="callToActionBtn cursor-pointer  text-[#F2F7FF] p-4 rounded-3xl hover:scale-105 transition duration-300 ">
-        Conoce nuestros servicios
-      </button>
+      <a href="#servicios">
+        <button style="font-family: 'Space Grotesk', sans-serif;"  class="callToActionBtn cursor-pointer  text-[#F2F7FF] p-4 rounded-3xl hover:scale-105 transition duration-300 ">
+          Conoce nuestros servicios
+        </button>
+      </a>
+
       <div>
         <img src="/mockup3.png" alt="" class="w-2/3">
       </div>
     </section>
-    <section class="bg-[#F2F7FF] flex flex-col gap-8 items-center justify-center px-10">
+    <section class="relative p-10 md:p-8 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 h-auto md:h-[400px]">
+    
+      <div class="flex flex-col gap-6 text-right">
+        <div class="bubble">Desarrollar modelos 3D interactivos</div>
+        <div class="bubble">Mejorar la experiencia de tus clientes</div>
+        <div class="bubble">Reducir la tasa de devolución de productos</div>
+      </div>
+  
+  
+      <div class="relative flex-shrink-0">
+        <div class="ellipse"></div>
+        <h1 style="font-family: 'Space Grotesk', sans-serif;" class="mission-title text-[#070127]">
+          Nuestra misión
+        </h1>
+      </div>
+  
+      
+      <div class="flex flex-col gap-6 text-left">
+        <div class="bubble">Integrar la realidad aumentada en tu negocio</div>
+        <div class="bubble">Facilitar la expansión del mercado digital</div>
+        <div class="bubble">Actualizar la venta por catálogo físico</div>
+      </div>
+    </section>
+    <section class="ar-section p-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 style="font-family: 'Space Grotesk', sans-serif;" class="text-5xl text-[#C0D8FF]">Pero, ¿qué es la <span class="text-white">realidad aumentada</span> o  <span class="text-white">AR</span>?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <p class="font-['Roboto'] text-2xl">
+            Es una tecnología que mezcla lo digital con el mundo real. Con un celular, una tablet o lentes especiales, puedes ver imágenes y animaciones sobre lo que te rodea.
+          </p>
+          <div class="ar-video-box">
+            <iframe 
+              src="https://www.youtube.com/watch?v=I68Ehtbu84M"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#C0D8FF] flex flex-col gap-8 items-center justify-center p-10 h-auto md:h-[500px]">
       <h2 style="font-family: 'Space Grotesk', sans-serif;" class="text-[#7953ff] font-bold text-4xl">¿Por qué integrar 3D y realidad aumentada en mi negocio?</h2>
-      <div class="flex w-full justify-center gap-4 text-2xl font-['Roboto'] text-[#180580]">
-        <div class="w-1/3 flex flex-col items-center">
-          <img src="/3d symbol.gif" alt="" class="w-2/3">
+      <div class="flex md:flex-row flex-col w-full justify-center gap-4 text-2xl font-['Roboto'] text-[#180580]">
+        <div class="w-auto md:w-1/3 flex flex-col items-center text-center p-6 rounded-lg shadow-md bg-[#F2F7FF]">
+          <img src="/3d symbol.gif" alt="" class="w-2/3 ">
           <p class="text-wrap">El 3d y el AR permite al cliente visualizar mejor que cualquier foto</p>
         </div>
-        <div class="w-1/3 flex flex-col items-center">
+        <div class="w-auto md:w-1/3 flex flex-col items-center text-center p-6 rounded-lg shadow-md bg-[#F2F7FF]">
           <img src="/decision gif.gif" alt="" class="w-2/3">
           <p class="text-wrap">Da seguridad de decisión al cliente</p>
         </div>
-        <div class="w-1/3 flex flex-col items-center">
+        <div class="w-auto mg:w-1/3 flex flex-col items-center p-6 text-center rounded-lg shadow-md bg-[#F2F7FF]">
           <img src="/memorable.png" alt="" class="w-1/3">
           <p class="text-wrap">Da una experiencia memorable al cliente</p>
         </div>
+      </div>
+    </section>
+    
+
+    <section id="servicios" class="services-section ">
+    
+      <div class="services-title-container mt-30">
+        <div class="services-title-ellipse "></div>
+        <h2 style="font-family: 'Space Grotesk', sans-serif;" class="text-2xl md:text-3xl font-bold bubble_services">Nuestros Servicios</h2>
+      </div>
+  
+      <p class="text-gray-700 mb-8 ">Ofrecemos una solución amigable para el consumidor</p>
+      <div class="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+        <div class="service-card">
+          <div class="service-card-content">
+            <svg class="service-icon" viewBox="0 0 512 512">
+              <path d="M487.3 315.8l-36.7-21.2c2.5-14.4 3.8-29.2 3.8-44.2s-1.3-29.8-3.8-44.2l36.7-21.2c4.4-2.5 6.5-7.6 5.2-12.4l-16.4-56.6c-1.3-4.6-5.3-7.9-10-8.3l-42.1-3.3c-11.2-19.3-25.2-37.1-41.5-52.1l4.9-41.9c0.6-4.7-1.7-9.2-5.7-11.6l-49.1-28.3c-4.1-2.4-9.2-2.1-13.1 0.7l-34.4 25.3c-14.2-2.8-28.7-4.3-43.5-4.3s-29.3 1.5-43.5 4.3l-34.4-25.3c-3.9-2.8-9-3.1-13.1-0.7l-49.1 28.3c-4 2.3-6.3 6.8-5.7 11.6l4.9 41.9c-16.3 15-30.3 32.8-41.5 52.1l-42.1 3.3c-4.7 0.4-8.7 3.7-10 8.3l-16.4 56.6c-1.3 4.8 0.9 9.9 5.2 12.4l36.7 21.2c-2.5 14.4-3.8 29.2-3.8 44.2s1.3 29.8 3.8 44.2l-36.7 21.2c-4.4 2.5-6.5 7.6-5.2 12.4l16.4 56.6c1.3 4.6 5.3 7.9 10 8.3l42.1 3.3c11.2 19.3 25.2 37.1 41.5 52.1l-4.9 41.9c-0.6 4.7 1.7 9.2 5.7 11.6l49.1 28.3c4.1 2.4 9.2 2.1 13.1-0.7l34.4-25.3c14.2 2.8 28.7 4.3 43.5 4.3s29.3-1.5 43.5-4.3l34.4 25.3c3.9 2.8 9 3.1 13.1 0.7l49.1-28.3c4-2.3 6.3-6.8 5.7-11.6l-4.9-41.9c16.3-15 30.3-32.8 41.5-52.1l42.1-3.3c4.7-0.4 8.7-3.7 10-8.3l16.4-56.6C493.8 323.4 491.7 318.3 487.3 315.8zM256 352c-52.9 0-96-43.1-96-96s43.1-96 96-96 96 43.1 96 96S308.9 352 256 352z"></path>
+            </svg>
+            <h3 style="font-family: 'Space Grotesk', sans-serif;">Consultoría, diseño y desarrollo</h3>
+            <p class="mt-2">
+              Mejoramos la experiencia del usuario a través de interfaces intuitivas y dinámicas.
+            </p>
+          </div>
+        </div>
+  
+        <div class="service-card">
+          <div class="service-card-content">
+            <svg class="service-icon" viewBox="0 0 512 512">
+              <path d="M488.727 133.179l-192-80a15.999 15.999 0 0 0-11.455 0l-192 80A16 16 0 0 0 96 147.179v217.143a16 16 0 0 0 9.273 14.356l192 80a15.999 15.999 0 0 0 11.455 0l192-80A16 16 0 0 0 512 364.322V147.179a16 16 0 0 0-9.273-14zM272 78.579l160.2 66.741-160.2 66.741-160.2-66.741zM112 172.677l160 66.666v178.078l-160-66.666zm192 244.744V239.343l160-66.666v178.078z"></path>
+            </svg>
+            <h3 style="font-family: 'Space Grotesk', sans-serif">Implementación AR y visores 3D</h3>
+            <p class="mt-2">
+              Implementamos tecnologías de modelado 3D y realidad aumentada para que tus clientes examinen productos desde todos los ángulos.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-content">
+            <svg class="service-icon" viewBox="0 0 448 512">
+              <path d="M448 256c0 114.9-93.1 208-208 208S32 370.9 32 256 125.1 48 240 48s208 93.1 208 208zm-132-60c-7.8-7.8-20.4-7.8-28.2 0l-29.8 29.8-29.8-29.8c-7.8-7.8-20.4-7.8-28.2 0s-7.8 20.4 0 28.2l29.8 29.8-29.8 29.8c-7.8 7.8-7.8 20.4 0 28.2 3.9 3.9 9 5.9 14.1 5.9s10.2-2 14.1-5.9l29.8-29.8 29.8 29.8c3.9 3.9 9 5.9 14.1 5.9s10.2-2 14.1-5.9c7.8-7.8 7.8-20.4 0-28.2l-29.8-29.8 29.8-29.8c7.8-7.8 7.8-20.4 0-28.2z"></path>
+            </svg>
+            <h3 style="font-family: 'Space Grotesk', sans-serif">Interactividad</h3>
+            <p class="mt-2">
+              Permitimos a los usuarios personalizar colores, texturas o funcionalidades de los productos en un entorno virtual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-8 text-center">
+      <p class="text-4xl text-[#180580] font-semibold  text-center p-8 " style="font-family: 'Space Grotesk', sans-serif;">
+        ¿Quieres un adelanto de lo que ofrecemos?
+      </p>
+      <div class="flex md:flex-row flex-col gap-10  w-full items-center md:justify-center">
+        <div class="bg-[#180580] rounded-lg w-3/8">ola</div>
+        <div id="viewer" class="md:w-3/8 w-auto h-[400px]"></div>
       </div>
     </section>
     <script type="module" src="/src/main.js"></script>
@@ -97,5 +195,191 @@
   initial-value: 0deg;
   inherits: false;
 }
+html{
+  scroll-behavior: smooth;
+}
+.bubble {
+      background-color: rgba(9, 1, 50, 1); 
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.685);
+      cursor: pointer;
+      color:#F2F7FF;
+      font-family: 'Roboto', sans-serif;
+    }
+    .bubble_services {
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      display: inline-block;
+
+      color:white;
+      border: 4px solid #0000;
+      background: linear-gradient(#070127, #070127) padding-box, linear-gradient(
+        var(--angle),
+        #C0D8FF,
+        #7953FF
+      ) border-box;
+    }
+    .bubble:hover {
+      border: 4px solid #0000;
+      background: linear-gradient(#070127, #070127) padding-box, linear-gradient(
+        var(--angle),
+        #C0D8FF,
+        #7953FF
+      ) border-box;
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+    .ellipse {
+      position: absolute;
+      width: 18rem;
+      height: 6rem;
+      background-color: #C0D8FF; 
+      border-radius: 9999px;
+      inset: 0;
+      margin: auto;
+      z-index: -10;
+    }
+    .ellipse::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: 18rem;
+      height: 6rem;
+      background-color: #8E8FFB; 
+      border-radius: 9999px;
+      opacity: 0.5;
+      z-index: -1;
+    }
+   
+    .mission-title {
+      font-size: 2.5rem; 
+      font-weight: 700;
+      text-align: center;
+      padding: 0.75rem 1.5rem;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .mission-title {
+        font-size: 3rem; 
+      }
+    }
+    .services-section {
+
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .services-title-container {
+      position: relative;
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      margin-bottom: 1rem;
+    }
+    .services-title-ellipse {
+      position: absolute;
+      inset: 0;
+
+      border-radius: 9999px;
+      z-index: -1;
+      
+    }
+
+    
+    .service-card {
+      background-color: #0B0B45; 
+      color: #fff;
+      border-radius: 0.75rem;
+      padding: 3rem;
+      box-shadow: 0 20px 20px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+      
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: -15%;
+      left: -15%;
+      width: 130%;
+      height: 130%;
+      background: linear-gradient(135deg, #6A5ACD, #6DD5FA);
+      border-radius: 50%;
+      opacity: 0.1;
+      z-index: 0;
+      
+      
+    }
+  
+    .service-card-content {
+      position: relative;
+      z-index: 1;
+      
+    }
+    
+    .service-icon {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 auto 1rem;
+      fill: #fff; 
+    }
+    .service-card h3 {
+      font-size: x-large;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color:rgba(192, 216, 255, 1);
+    }
+    .service-card p {
+      font-size: 1rem;
+      color: rgba(242, 247, 255, 1);
+      line-height: 1.4;
+    }
+    .ar-section {
+      background-color: rgba(24, 5, 128, 1); 
+      color: #fff;              
+      padding: 2rem 1rem;      
+    }
+    .ar-section h2 {
+      font-weight: 700;  
+      margin-bottom: 1rem;
+    }
+    .ar-section p {
+      line-height: 1.5;
+    }
+    
+    .ar-video-box {
+      background-color: #d1d5db; 
+      color: #374151;          
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-weight: 500;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .ar-video-box iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .mi_negocio {
+      color:rgba(121, 83, 255, 1);
+      padding: 10px;
+      text-align: center;
+    }
+    .mi_negocio p{
+      color:rgba(24, 5, 128, 1);
+      padding: 10px;
+      text-align: center;
+    }
   </style>
 </html>
