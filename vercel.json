@@ -1,5 +1,9 @@
 {
     "routes": [
-      { "src": "/(.*)", "dest": "/$1" }
-    ]
+      { "src": "/", "dest": "/index.html" },
+      { "src": "/contactanos.html", "dest": "/contactanos.html" }
+    ],
+    "cleanUrls": true
+    
   }
+  
